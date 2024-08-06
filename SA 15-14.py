@@ -78,9 +78,6 @@ def generate_orders_for_day(real_proportion, simulated_proportion, existing_real
     for i, order in enumerate(orders, start=1):
         order['id'] = i
 
-    # Shuffle the orders to randomize their position
-    random.shuffle(orders)
-
     return orders
 
 def allocate_orders(orders, factory_capacities):
